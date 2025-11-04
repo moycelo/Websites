@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+        My Playlist
+    </title>
+<style> 
+    h1{
+        color: white;
+    }
+    body {
+        background-color: black;
+        text-align: center;
+        margin:0;
+        padding: 0;
+    }
+    header{
+        margin: 40px 0; /*Center the header*/
+        width: 100%;
+        color: white;
+    }
+    main{
+        margin: 40px auto;
+        color: white;
+        max-width: 600px;
+    }
+    p{
+        font-size: 1.1em; /*em for unit*/
+
+    }
+    nav {
+        margin-top: 20px;
+    }
+    nav a{
+        display:inline-block;  /* box*/
+        background-color: #ff4e6b;      /*color*/
+        color:white; /*text color*/
+        margin: 10px; /*the space between boxes*/
+        padding: 20px 15px; /*box size*/
+        border-radius: 10px; /* rounded corners*/
+        font-weight: bold; 
+        font-size: 1.5em;
+        transition: all 0.3s ease; /*smooth hover animation*/
+        cursor: pointer;
+        text-decoration: none; /*removes underline*/
+    }
+    nav a:hover{
+        background-color: white; /*color on hover*/
+        color: #ff4e6b; /*color swap*/
+        transform: scale(1.05); /* zoom effect*/
+
+    }
+    section{
+        margin-bottom: 60px;
+    }
+    /*for collage*/
+    #collage h2{
+        color: white;
+        margin-bottom: 20px;
+   
+    }
+    .collage-container{
+        display: flex; /*Horizontal layout*/
+        overflow-x: auto; /*makes it scrollable*/ /* also scroll bar*/
+        gap: 15px; /*space between images*/
+        padding: 10px;
+        border: 2px solid #ff4e6b; /*color for border*/
+        border-radius: 10px;
+        background-color:  #111; /*a little lighter than black*/
+        scroll-behavior: smooth; /*smooth scroll*/
+        animation: scroll 20s linear infinite;
+
+    }
+    .collage-container img{
+        height: 200px;      /*uniform height*/
+        flex-shrink: 0;   /*no shrinking*/
+        object-fit: cover;  /*maintains ratio*/
+        border-radius: 10px;
+        transition: transform 0.3s;
+
+
+    }
+    .collage-container img:hover{
+        transform: scale(1.05); /*zoom on hover*/
+
+    }
+   
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            My Playlist
+       </h1>
+    </header>
+    
+    <main>
+       
+        <div id="home">
+            <p> 
+                This site is a collection of my favorite songs and artists that have shaped who I am. 
+                Each song represents a different mood or moment — from upbeat tracks that keep me motivated, 
+                to calm tunes that help me relax after a long day. Music has always been a way for me to connect 
+                with people and express emotions that words alone can’t describe.
+            </p>
+
+        </div>
+
+        <section id="collage">
+            <h2> 
+                Songs
+            </h2>
+            <div class="collage-container">
+                <img src ="images/beabadoobee.jpg" alt = "Beatrix">
+                <img src = "images/daniel.jpg" alt = "mrdaniel">
+                <img src = "images/Jlo.jpg" alt = "JLO">
+                <img src = "images/ocean.jpg" alt = "Chanel">
+                <img src = "images/marias.jpg" alt = "sienna">
+                <img src = "images/panchiko.jpg" alt = "deathmetal">
+                <img src = "images/yewest.jpg" alt = "homecoming">
+            </div>
+        </section>
+        
+    </main>
+        <nav> 
+            <a href="songs.html">Song Highlight</a>
+            <a href="artist.html">Artist Highlight</a>
+            <a href="genre.html">Favorite Genre</a>
+            <a href="mailto:cyanlm4@gmail.com">Leave a Review!</a>
+        </nav>
+    
+    
+</body>
+
+</html>
